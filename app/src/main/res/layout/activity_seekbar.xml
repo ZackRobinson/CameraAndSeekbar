@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20sp"
+        tools:context="com.example.zack.cameraandseekbar.SeekbarActivity">
+
+
+        <TextView
+            android:id="@+id/resultTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="20sp"
+            android:layout_marginTop="20sp"
+            android:gravity="center"
+            android:text="Equated Monthly Installments" />
+
+        <TextView
+            android:id="@+id/loanAmountTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/resultTextView"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Loan Amount" />
+
+        <SeekBar
+            android:id="@+id/loanAmountSeekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/loanAmountTitle"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/loanAmountTextView"
+            android:max="5" />
+
+        <TextView
+            android:id="@+id/loanAmountTextView"
+            android:layout_width="90sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/loanAmountTitle"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Loan Amount" />
+
+
+        <TextView
+            android:id="@+id/interestRateTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loanAmountSeekBar"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Interest Rate" />
+
+        <TextView
+            android:id="@+id/interestRateTextView"
+            android:layout_width="90sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/interestRateTitle"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Interest Rate" />
+
+        <SeekBar
+            android:id="@+id/interestRateSeekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/interestRateTitle"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/interestRateTextView"
+            android:max="5" />
+
+        <TextView
+            android:id="@+id/loanTenureTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/interestRateSeekBar"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Loan Tenure" />
+
+        <TextView
+            android:id="@+id/loanTenureTextView"
+            android:layout_width="90sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/loanTenureTitle"
+            android:layout_marginBottom="100sp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Loan Tenure" />
+
+        <SeekBar
+            android:id="@+id/loanTenureSeekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/loanTenureTitle"
+            android:layout_marginBottom="100sp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/loanTenureTextView"
+            android:max="5" />
+
+        <Button
+            android:id="@+id/switchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/loanTenureSeekBar"
+            android:layout_alignParentBottom="true"
+            android:onClick="goToCamera"
+            android:text="Switch to Camera" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

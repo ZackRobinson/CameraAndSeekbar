@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20sp"
+    tools:context="com.example.zack.cameraandseekbar.CameraActivity">
+
+
+    <ImageView
+        android:id="@+id/capturedImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20sp"
+        android:layout_above="@+id/captureImage"
+        android:contentDescription="@string/captured_image"
+        />
+
+    <Button
+        android:id="@+id/captureImage"
+        android:layout_width="300sp"
+        android:layout_height="60sp"
+        android:layout_above="@+id/switchView1"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20sp"
+        android:text="@string/capture_image"
+        android:onClick="dispatchTakePictureIntent" />
+
+    <Button
+        android:id="@+id/switchView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:onClick="goToEMI"
+        android:text="Switch to EMI calculator" />
+
+</RelativeLayout>
